@@ -1,24 +1,31 @@
 {
   "name": "supabase-chat-backend",
   "version": "1.0.0",
+  "description": "Backend para aplicação de chat em tempo real com Supabase, Prisma e Socket.io",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "generate": "prisma generate",
-    "postinstall": "prisma generate"
+    "dev": "nodemon server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
-    "express": "",
-    "cors": "",
-    "multer": "",
-    "fs": "",
-    "path": "",
-    "@supabase/supabase-js": "",
-    "@prisma/client": "",
-    "pg": ""
+    "@prisma/client": "^5.0.0",
+    "@supabase/supabase-js": "^2.0.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.7.1"
   },
   "devDependencies": {
-    "prisma": "",
-    "nodemon": ""
+    "nodemon": "^3.0.1",
+    "prisma": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
