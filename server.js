@@ -24,7 +24,7 @@ const PORT = 3000;
 const JWT_SECRET = "sua_chave_secreta_jwt_bem_longa_e_complexa"; // Use uma chave segura e longa!
 const SUPABASE_URL = "https://rokjbwcnswnlosgrukqb.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJva2pid2Nuc3dubG9zZ3J1a3FiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM4MjA2NTcsImV4cCI6MjA2OTM5NjY1N30.bTakra3Shi5MbXH7HVhjU6ExmC7BB6kvU-qYORJGhfc";
-const SUPABASE_BUCKET_NAME = "chat-uploads"; // Nome do seu bucket no Supabase Storage
+const SUPABASE_BUCKET_NAME = "dina"; // Nome do seu bucket no Supabase Storage
 
 // Chave do banco de dados fornecida:
 const DATABASE_URL = "postgresql://postgres.rokjbwcnswnlosgrukqb:FARIA2580222@aws-0-eu-north-1.pooler.supabase.com:5432/postgres";
